@@ -1,0 +1,10 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeAboutMe {
+  width: 800px;
+}

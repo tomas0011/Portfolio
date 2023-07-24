@@ -1,0 +1,50 @@
+@import '../../App.css';
+
+.Navbar {
+  display: flex;
+  background-color: var(--color-base);
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  margin-bottom: 50px;
+}
+
+.NavbarTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-bg);
+  height: 100px;
+}
+
+.NavbarNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.NavbarNav a {
+  color: var(--color-bg);
+  display: block;
+  padding: 12px 24px 12px 24px;
+}
+
+.NavbarNav a:hover {
+  color: var(--color-base);
+  background-color: var(--color-bg);
+}
+
+.NavbarNav a.active {
+  color: var(--color-base);
+  background-color: var(--color-bg);
+}
+
+.Navbar img {
+  width: 140px;
+  height: 140px;
+  border: 5px solid var(--color-bg);
+  border-radius: 100%;
+  position: relative;
+  top: 30px;
+}

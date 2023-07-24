@@ -1,0 +1,6 @@
+@import '../../App.css';
+
+.Footer {
+  background-color: var(--color-base);
+  margin-top: auto;
+}
