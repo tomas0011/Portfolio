@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import Experiences from './Components/Experiences/Experiences'
 import Studies from './Components/Studies/Studies'
 import Skills from './Components/Skills/Skills'
+import ContactMe from './Components/ContactMe/ContactMe'
 import Footer from './Components/Footer/Footer'
 
 export const App = () => {
@@ -36,7 +37,9 @@ export const App = () => {
         ? <Studies/>
         : page === 'skills'
         ? <Skills/>
-        : <h1>not implemented</h1>
+        : page === 'contact'
+        ? <ContactMe/>
+        : <h1>NOT FOUND</h1>
       }
       <Footer/>
     </div>

@@ -3,11 +3,13 @@ import {
   Nav
 } from 'react-bootstrap';
 
+import perfil from '../../Assets/Img/Perfil.jpg';
+
 export const Navbar = ({ page, changePage }) => {
 
   return (
     <div className="Navbar">
-      <img src="https://picsum.photos/100/100" alt="perfil" />
+      <img src={perfil} alt="perfil" />
       <div>
         <div className='NavbarTitle'>
           <h1>TOMAS BENJAMIN VASQUEZ</h1>
@@ -37,11 +39,6 @@ export const Navbar = ({ page, changePage }) => {
             active={page === "skills"}
             onClick={() => changePage('skills')}>
             HABILIDADES
-          </Nav.Link>
-          <Nav.Link
-            active={page === "histories"}
-            onClick={() => changePage('histories')}>
-            HISTORIAS
           </Nav.Link>
           <Nav.Link
             active={page === "contact"}

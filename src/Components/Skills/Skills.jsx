@@ -1,16 +1,14 @@
 import './Skills.css';
+import { skills } from './skills';
 
 export const Skills = () => {
-  const skills = [
-    { title: 'js' },
-    { title: 'redis' },
-    { title: 'nestJs' },
-    { title: 'python' }
-  ];
   return (
     <div className="Skills">
-      {skills.map((skill) => (
-        <h1>{skill.title}</h1>
+      {Object.keys(skills).map((category) => (
+        <div>
+          <h1>{category}:</h1>
+          {skills[category].map((skill) => <h3>{skill.title}</h3>)}
+        </div>
       ))}
     </div>
   );

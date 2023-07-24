@@ -43,6 +43,8 @@
 .Navbar img {
   width: 140px;
   height: 140px;
+  object-fit: cover;
+  object-position: 50% 20%;
   border: 5px solid var(--color-bg);
   border-radius: 100%;
   position: relative;

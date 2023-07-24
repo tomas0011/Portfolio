@@ -4,8 +4,8 @@ export const Item = ({ data }) => {
   return (
     <div className="Item">
       <div className='ItemLogo'>
-        <img src="https://picsum.photos/100/100" alt="logo"/>
-        <hr/>
+        <img src={data.img} alt="logo"/>
+        <div className='VerticalLine'/>
       </div>
       <div>
         <div className='ItemTitle'>

@@ -4,10 +4,10 @@ import Item from '../Item/Item'
 
 export const Studies = () => {
   const studies = [
-    { title: 'Lic. Informatica' },
-    { title: 'Tec. Programacion' },
-    { title: 'Tec. Informatica' },
-    { title: 'Admin. Redes informaticas' }
+    { title: 'Lic. Informatica', img: require('../../Assets/Img/Unahur.png') },
+    { title: 'Tec. Programacion', img: require('../../Assets/Img/Unahur.png') },
+    { title: 'Tec. Informatica', img: require('../../Assets/Img/EESTN1OEA.png') },
+    { title: 'Admin. Redes informaticas', img: '' }
   ];
   return (
     <div className="Studies">
