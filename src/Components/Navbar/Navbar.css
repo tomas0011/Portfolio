@@ -11,10 +11,20 @@
 
 .NavbarTitle {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: var(--color-bg);
   height: 100px;
+}
+
+.NavbarTitle ul {
+  display: flex;
+  list-style: none;
+}
+
+.NavbarTitle ul li {
+  margin: 0 10px 0 10px;
 }
 
 .NavbarNav {

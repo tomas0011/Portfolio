@@ -1,16 +1,31 @@
 export const skills = {
-  frameworksAndLibraries: [
-    { title: 'nestJs' },
-    { title: 'nodeJs' },
-    { title: 'express' },
-    { title: 'django' },
-    { title: 'fastApi' }
+  'BackEnd': [
+    { title: 'NestJs' },
+    { title: 'NodeJs' },
+    { title: 'Express' },
+    { title: 'Django' },
+    { title: 'FastApi' }
   ],
-  db: [
+  'DB': [
     { title: 'MariaDB' },
     { title: 'MySQL' },
     { title: 'PosgreSQL' },
     { title: 'Mongo' },
     { title: 'Redis' }
+  ],
+  'Cloud': [
+    { title: 'GCP' },
+    { title: 'CloudFunctions' },
+    { title: 'CloudTasks' },
+    { title: 'PubSub' },
+    { title: 'RabbitMq' },
+    { title: 'AWS' },
+  ],
+  'FrontEnd': [
+    { title: 'React' },
+    { title: 'React-Native' },
+    { title: 'Redux' },
+    { title: 'CSS' },
+    { title: 'HTML' }
   ]
 }
