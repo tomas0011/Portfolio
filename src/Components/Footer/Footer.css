@@ -3,4 +3,5 @@
 .Footer {
   background-color: var(--color-base);
   margin-top: auto;
+  padding-inline: 6rem;
 }

@@ -1,8 +1,5 @@
 import './Navbar.css';
-import {
-  Nav
-} from 'react-bootstrap';
-
+import { Nav } from 'react-bootstrap';
 import perfil from '../../Assets/Img/Perfil.jpg';
 
 export const Navbar = ({ page, changePage }) => {
@@ -13,11 +10,6 @@ export const Navbar = ({ page, changePage }) => {
       <div>
         <div className='NavbarTitle'>
           <h1>TOMAS BENJAMIN VASQUEZ</h1>
-          <ul>
-            <li>TECNICO EN INFORMATICA</li>
-            <li>TECNICO UNIVERSITARIO EN PROGRAMACION</li>
-            <li>DESARROLLADOR BACKEND SR</li>
-          </ul>
         </div>
         <Nav className='NavbarNav'>
           <Nav.Link

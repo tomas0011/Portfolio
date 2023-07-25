@@ -4,8 +4,24 @@
   --color-acent: #000000;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
+ul{
+  padding-left: 1rem;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.App > div:nth-child(2){
+  margin-bottom: 2rem;
+}
+
+.dn{
+  display: none;
 }

@@ -3,19 +3,22 @@
 .Navbar {
   display: flex;
   background-color: var(--color-base);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 140px;
-  margin-bottom: 50px;
+  margin-bottom: 15vh;
+  padding-inline: 6rem;
+  gap: 4rem;
+}
+
+.Navbar > div{
+  padding-top: 3rem;
 }
 
 .NavbarTitle {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   color: var(--color-bg);
-  height: 100px;
+  gap: 4rem;
 }
 
 .NavbarTitle ul {
@@ -51,12 +54,24 @@
 }
 
 .Navbar img {
-  width: 140px;
-  height: 140px;
+  width: 8rem;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: 50% 20%;
   border: 5px solid var(--color-bg);
   border-radius: 100%;
   position: relative;
-  top: 30px;
+  top: 3rem;
+  transform: scale(1.5);
+}
+
+@media (max-width: 782px) {
+  .Navbar{
+    flex-direction: column;
+    margin-bottom: 10vh;
+    padding-inline: 1rem;
+  }
+  .NavbarTitle{
+    text-align: center;
+  }
 }
