@@ -2,4 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 25vw;
+}
+.Skills > div {
+  width: 100%;
+}
+
+@media (max-width: 782px) {
+  .Skills{
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  .Skills h1{
+    font-size: 1.6rem;
+  }
 }

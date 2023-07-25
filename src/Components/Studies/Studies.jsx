@@ -7,7 +7,7 @@ export const Studies = () => {
     { title: 'Lic. Informatica', img: require('../../Assets/Img/Unahur.png') },
     { title: 'Tec. Programacion', img: require('../../Assets/Img/Unahur.png') },
     { title: 'Tec. Informatica', img: require('../../Assets/Img/EESTN1OEA.png') },
-    { title: 'Admin. Redes informaticas', img: '' }
+    { title: 'Admin. Redes informaticas', img: require('../../Assets/Img/EESTN1OEA.png') }
   ];
   return (
     <div className="Studies">

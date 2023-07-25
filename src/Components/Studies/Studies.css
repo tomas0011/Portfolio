@@ -1,5 +1,11 @@
 .Studies {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 25vw;
+}
+
+@media (max-width: 782px) {
+  .Studies{
+    margin-inline: auto;
+  }
 }
