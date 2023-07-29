@@ -55,6 +55,7 @@
 
 .Navbar img {
   width: 8rem;
+  position: relative;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: 50% 20%;
@@ -106,9 +107,6 @@
   }
   .Dropdown.Open{
     transform: translateY(0%);
-  }
-  .Dropdown.Open .DropdownToggle{
-    bottom: 0;
   }
   .DropdownToggle{
     display: initial;
