@@ -60,9 +60,28 @@
   object-position: 50% 20%;
   border: 5px solid var(--color-bg);
   border-radius: 100%;
-  position: relative;
   top: 3rem;
   transform: scale(1.5);
+}
+
+.Dropdown{
+  display: initial;
+}
+
+.DropdownToggle{
+  background: var(--color-base);
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  color: var(--color-bg);
+  font-weight: bold;
+  margin-left: auto;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  transition-duration: 300ms;
+  display: none;
+  position: absolute;
+  right: 0%;
+  bottom: -2.5rem;
 }
 
 @media (max-width: 782px) {
@@ -70,8 +89,28 @@
     flex-direction: column;
     margin-bottom: 10vh;
     padding-inline: 1rem;
+    position: relative;
   }
   .NavbarTitle{
     text-align: center;
+  }
+  .Dropdown{
+    position: fixed;
+    flex-direction: column;
+    z-index: 10;
+    justify-content: start;
+    background-color: var(--color-base);
+    inset-inline: 0;
+    transform: translateY(-100%);
+    transition-duration: 300ms;
+  }
+  .Dropdown.Open{
+    transform: translateY(0%);
+  }
+  .Dropdown.Open .DropdownToggle{
+    bottom: 0;
+  }
+  .DropdownToggle{
+    display: initial;
   }
 }
