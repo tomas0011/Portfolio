@@ -65,6 +65,24 @@
   transform: scale(1.5);
 }
 
+.Dropdown{
+  display: initialt;
+}
+
+.DropdownToggle{
+  background: var(--color-base);
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  color: var(--color-bg);
+  font-weight: bold;
+  margin-left: auto;
+  transform: translateY(90%);
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  transition-duration: 300ms;
+  display: none;
+}
+
 @media (max-width: 782px) {
   .Navbar{
     flex-direction: column;
@@ -73,5 +91,22 @@
   }
   .NavbarTitle{
     text-align: center;
+  }
+  .Dropdown{
+    position: fixed;
+    flex-direction: column;
+    z-index: 10;
+    justify-content: start;
+    background-color: var(--color-base);
+    top: 0;
+    inset-inline: 0;
+    transform: translateY(-100%);
+    transition-duration: 300ms;
+  }
+  .Dropdown.Open, .Dropdown.Open .DropdownToggle{
+    transform: translateY(0%);
+  }
+  .DropdownToggle{
+    display: initial;
   }
 }

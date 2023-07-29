@@ -1,7 +1,14 @@
 @import '../../App.css';
 
 .Footer {
+  display: flex;
   background-color: var(--color-base);
   margin-top: auto;
   padding-inline: 6rem;
+}
+
+@media (max-width: 782px) {
+  .Footer{
+    padding-inline: 1rem;
+  }
 }
