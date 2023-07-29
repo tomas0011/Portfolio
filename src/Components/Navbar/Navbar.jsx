@@ -42,6 +42,9 @@ export const Navbar = ({ page, changePage }) => {
           <span onClick={()=>{setToggleDropdown(!toggleDropdown)}} className='DropdownToggle'>{(toggleDropdown?'-':'+')}</span>
         </Nav>
       </div>
+      <div className='NavbarTitle MobileOnly'>
+        <h1>TOMAS BENJAMIN VASQUEZ</h1>
+      </div>
     </div>
   );
 }

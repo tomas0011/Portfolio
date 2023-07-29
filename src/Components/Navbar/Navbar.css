@@ -82,7 +82,11 @@
   display: none;
   position: absolute;
   right: 0%;
-  bottom: -2.5rem;
+  bottom: -2.6rem;
+}
+
+.MobileOnly{
+  display: none;
 }
 
 @media (max-width: 782px) {
@@ -94,6 +98,7 @@
   }
   .NavbarTitle{
     text-align: center;
+    padding-top: 1rem;
   }
   .Dropdown{
     position: fixed;
@@ -104,11 +109,23 @@
     inset-inline: 0;
     transform: translateY(-100%);
     transition-duration: 300ms;
+    padding-block: 2rem;
   }
   .Dropdown.Open{
     transform: translateY(0%);
   }
   .DropdownToggle{
+    display: initial;
+  }
+  body .Navbar .NavbarTitle  h1{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+  }
+  .Dropdown > .NavbarTitle{
+    padding-top: 2rem;
+  }
+  .MobileOnly{
     display: initial;
   }
 }
