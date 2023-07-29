@@ -60,13 +60,12 @@
   object-position: 50% 20%;
   border: 5px solid var(--color-bg);
   border-radius: 100%;
-  position: relative;
   top: 3rem;
   transform: scale(1.5);
 }
 
 .Dropdown{
-  display: initialt;
+  display: initial;
 }
 
 .DropdownToggle{
@@ -76,11 +75,13 @@
   color: var(--color-bg);
   font-weight: bold;
   margin-left: auto;
-  transform: translateY(90%);
   border-bottom-left-radius: 4rem;
   border-bottom-right-radius: 4rem;
   transition-duration: 300ms;
   display: none;
+  position: absolute;
+  right: 0%;
+  bottom: -2.5rem;
 }
 
 @media (max-width: 782px) {
@@ -88,6 +89,7 @@
     flex-direction: column;
     margin-bottom: 10vh;
     padding-inline: 1rem;
+    position: relative;
   }
   .NavbarTitle{
     text-align: center;
@@ -98,13 +100,15 @@
     z-index: 10;
     justify-content: start;
     background-color: var(--color-base);
-    top: 0;
     inset-inline: 0;
     transform: translateY(-100%);
     transition-duration: 300ms;
   }
-  .Dropdown.Open, .Dropdown.Open .DropdownToggle{
+  .Dropdown.Open{
     transform: translateY(0%);
+  }
+  .Dropdown.Open .DropdownToggle{
+    bottom: 0;
   }
   .DropdownToggle{
     display: initial;
